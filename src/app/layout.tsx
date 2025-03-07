@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${outfit.variable} dark:bg-gray-900`}>
         <ThemeProvider>
-          <SessionProvider>
+          <SessionProvider session={session}>
             <SidebarProvider>
               {children}
             </SidebarProvider>
